@@ -55,7 +55,7 @@ sys.path.append(__resources_lib__)
 
 encoding = locale.getpreferredencoding(do_setlocale=True)
 reload(sys)
-sys.setdefaultencoding(encoding)
+sys.setdefaultencoding(encoding='utf-8')
 
 def Lang(vcode):
     return __addon__.getLocalizedString(vcode)
